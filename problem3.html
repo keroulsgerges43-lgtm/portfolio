@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+
+
+<head>
+
+
+
+    <title>Problem 3</title>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+<script>
+
+
+
+// Variable to store the total sum of grades
+
+
+
+let sum = 0;
+
+
+
+// Loop to collect 5 grades from the user
+
+
+
+for (let i = 1; i <= 5; i++) {
+
+
+
+    // Prompt the user to enter a grade and convert it to a number
+
+
+
+    let grade = parseFloat(prompt("Enter grade " + i + ":"));
+
+
+
+    // Add the grade to the total sum
+
+
+
+    sum += grade;
+
+
+
+}
+
+
+
+// Calculate the average (total sum divided by 5)
+
+
+
+let average = sum / 5;
+
+
+
+// Display the result using an alert
+
+
+
+alert("Average grade is: " + average);
+
+
+
+// (Optional) Display the result on the page
+
+
+
+document.body.innerHTML = "Average grade is: " + average;
+
+
+
+</script>
+
+
+
+</body>
+
+
+
+</html>
+

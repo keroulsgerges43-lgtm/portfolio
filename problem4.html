@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+
+
+<head>
+
+
+
+    <title>Problem 4</title>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+<script>
+
+
+
+// Variable to store total sum of grades
+
+
+
+let sum = 0;
+
+
+
+// Variable to count number of grades entered
+
+
+
+let count = 0;
+
+
+
+// Variable to control the loop (Y/N)
+
+
+
+let choice = "Y";
+
+
+
+// Loop continues as long as user enters "Y"
+
+
+
+while (choice === "Y" || choice === "y") {
+
+
+
+    // Ask user to enter a grade
+
+
+
+    let grade = parseFloat(prompt("Enter a grade:"));
+
+
+
+    // Add grade to sum
+
+
+
+    sum += grade;
+
+
+
+    // Increase count
+
+
+
+    count++;
+
+
+
+    // Ask user if they want to continue
+
+
+
+    choice = prompt("Do you want to enter another grade? (Y/N)");
+
+
+
+}
+
+
+
+// Calculate average
+
+
+
+let average = sum / count;
+
+
+
+// Display result
+
+
+
+alert("Average grade is: " + average);
+
+
+
+// Show result on page
+
+
+
+document.body.innerHTML = "Average grade is: " + average;
+
+
+
+</script>
+
+
+
+</body>
+
+
+
+</html>
+

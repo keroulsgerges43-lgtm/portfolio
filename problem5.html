@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+
+
+<head>
+
+
+
+    <title>Problem 5</title>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+<script>
+
+
+
+// Variable to store total points
+
+
+
+let totalPoints = 0;
+
+
+
+// Loop continues until total points reach 200 or more
+
+
+
+while (totalPoints < 200) {
+
+
+
+    // Ask the user to enter points
+
+
+
+    let points = parseFloat(prompt("Enter points earned:"));
+
+
+
+    // Add points to total
+
+
+
+    totalPoints += points;
+
+
+
+    // (Optional) Show current total after each entry
+
+
+
+    alert("Current total points: " + totalPoints);
+
+
+
+}
+
+
+
+// Display final message when 200+ is reached
+
+
+
+alert("Congratulations! You reached " + totalPoints + " points. You can move to the next level!");
+
+
+
+// Show result on the page
+
+
+
+document.body.innerHTML = "You reached " + totalPoints + " points. Next level unlocked!";
+
+
+
+</script>
+
+
+
+</body>
+
+
+
+</html>

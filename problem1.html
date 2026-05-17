@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+
+
+<head>
+
+
+
+    <title>Problem 1</title>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+<script>
+
+
+
+// Problem 1: Employee Pay Calculator
+
+
+
+// This program calculates total pay including overtime
+
+
+
+// Ask the user to enter total hours worked
+
+
+
+// parseFloat converts input from string to number
+
+
+
+let hoursWorked = parseFloat(prompt("Enter the total number of hours worked:"));
+
+
+
+// Ask the user for contracted hours before overtime starts
+
+
+
+// This value must come from the user (not fixed like 40)
+
+
+
+let contractedHours = parseFloat(prompt("Enter the contracted hours (before overtime):"));
+
+
+
+// Ask the user for pay rate per hour
+
+
+
+let payRate = parseFloat(prompt("Enter pay per hour:"));
+
+
+
+// Set overtime multiplier (1.5 = time and a half)
+
+
+
+let overtimeRate = 1.5;
+
+
+
+// Variable to store final total pay
+
+
+
+let totalPay;
+
+
+
+// Check if employee worked overtime
+
+
+
+if (hoursWorked <= contractedHours) {
+
+
+
+    // No overtime → calculate normal pay
+
+
+
+    totalPay = hoursWorked * payRate;
+
+
+
+} else {
+
+
+
+    // Calculate regular pay for contracted hours
+
+
+
+    let regularPay = contractedHours * payRate;
+
+
+
+    // Calculate overtime hours
+
+
+
+    let overtimeHours = hoursWorked - contractedHours;
+
+
+
+    // Calculate overtime pay
+
+
+
+    let overtimePay = overtimeHours * payRate * overtimeRate;
+
+
+
+    // Total pay = regular pay + overtime pay
+
+
+
+    totalPay = regularPay + overtimePay;
+
+
+
+}
+
+
+
+// Display the final calculated pay
+
+
+
+alert("Total Pay is: $" + totalPay);
+
+
+
+</script>
+
+
+
+</body>
+
+
+
+</html>
+
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+
+
+<head>
+
+
+
+    <title>Problem 2</title>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+<script>
+
+
+
+// Problem 2: Convert pseudocode to JavaScript
+
+
+
+// Initialize variables
+
+
+
+let num1 = 10;
+
+
+
+let num2 = 20;
+
+
+
+let wksum = 0;
+
+
+
+let rslt = 0;
+
+
+
+// Loop (runs at least once)
+
+
+
+do {
+
+
+
+    // Calculate sum
+
+
+
+    wksum = num1 + num2;
+
+
+
+    // Check condition
+
+
+
+    if (wksum > 30) {
+
+
+
+        // If greater than 30
+
+
+
+        num1 = num1 - 2;
+
+
+
+        num2 = num2 + 1;
+
+
+
+    } else {
+
+
+
+        // If 30 or less
+
+
+
+        num1 = num1 + 1;
+
+
+
+        num2 = num2 + 3;
+
+
+
+    }
+
+
+
+} while (num2 < 30);
+
+
+
+// Final result
+
+
+
+rslt = num1 + num2;
+
+
+
+// Display result
+
+
+
+alert("Result is: " + rslt);
+
+
+
+</script>
+
+
+
+</body>
+
+
+
+</html>
+
